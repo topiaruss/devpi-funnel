@@ -1,0 +1,2 @@
+FROM topiaruss/docker-devpi
+
