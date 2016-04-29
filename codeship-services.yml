@@ -2,3 +2,11 @@ app:
   build:
     image: topiaruss/devpi-funnel
     dockerfile_path: Dockerfile
+client:
+  build:
+    image: testclient
+    dockerfile_path: testclient/Dockerfile
+  links:
+    - app
+  environment:
+    DEVPI_HOST: app
