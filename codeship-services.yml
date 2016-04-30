@@ -2,6 +2,7 @@ app:
   build:
     image: topiaruss/devpi-funnel
     dockerfile_path: Dockerfile
+  encrypted_env_file: testclient/aws_deployment.env.encrypted
 client:
   build:
     image: testclient
