@@ -62,3 +62,11 @@ and:
     $ jet encrypt testclient/aws_deployment.env \
       testclient/aws_deployment.env.encrypted
 
+====================================
+
+# work_around branch
+
+On this branch, we give up running the container in codeship, and run it
+on a Docker Cloud nominated host directly, where we have control over the 
+container params.
+
